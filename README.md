@@ -38,3 +38,7 @@ These additional references should also help you:
 ## Missing R2DBC Driver
 
 Make sure to include a [R2DBC Driver](https://r2dbc.io/drivers/) to connect to your database.
+
+##Notes
+
+The angular frontend is based in Baeldung [project](https://github.com/eugenp/tutorials/tree/master/spring-boot-modules/spring-boot-angular)
