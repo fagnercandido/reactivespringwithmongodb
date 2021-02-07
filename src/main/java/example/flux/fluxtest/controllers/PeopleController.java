@@ -1,5 +1,7 @@
 package example.flux.fluxtest.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,9 +17,14 @@ import example.flux.fluxtest.repositories.PeopleRepository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
+
 @RestController
 @RequestMapping("/api/v1/people")
 public class PeopleController {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(PeopleController.class);
+
 
     PeopleRepository peopleRepository;
 

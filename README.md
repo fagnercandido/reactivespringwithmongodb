@@ -1,5 +1,10 @@
 # Getting Started
 
+To run project:
+
+mvn clean package
+java -jar target/myjarFile.jar
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
